@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<link rel="icon" type="image/svg+xml" href="../images/NJ.png" />
+		<!-- Fonts -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@0;1&family=Work+Sans&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="../index.css" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<script src="../script.js"></script>
+		<title>New Jersey | Garden State</title>
+	</head>
+	<body>
+		<div class="layout-div">
+			<!-- Navigation -->
+			<nav>
+				<div class="logo">
+					<a href="/">
+						New Jersey
+						<br />
+						The Garden State
+					</a>
+				</div>
+				<div class="hamburger">☰</div>
+				<div class="mobile-nav">
+					<ul>
+						<li><a href="/">Home</a></li>
+						<li><a href="./attractions.html">Attractions</a></li>
+						<li><a href="./state-history.html">State History</a></li>
+						<li><a href="./form-page.html">Contact</a></li>
+						<li class="close-icon">&#x2169;</li>
+					</ul>
+				</div>
+				<ul class="nav-links">
+					<li><a href="/">Home</a></li>
+					<li><a href="./attractions.html">Attractions</a></li>
+					<li><a href="./state-history.html">State History</a></li>
+					<li><a href="./form-page.html">Contact</a></li>
+				</ul>
+			</nav>
+
+			<!-- Header -->
+			<header>
+				<h1>Contact Form</h1>
+			</header>
+			<main>
+				<div class="form-page">
+					<div class="form-container">
+						<h2>Send us a Message!</h2>
+						<form id="contactForm">
+							<div class="form-group">
+								<label htmlFor="firstName">First Name:</label>
+								<input
+									type="text"
+									id="firstName"
+									name="firstName"
+									placeholder="First Name"
+									required
+								/>
+							</div>
+
+							<div class="form-group">
+								<label htmlFor="lastName">Last Name:</label>
+								<input
+									type="text"
+									id="lastName"
+									name="lastName"
+									placeholder="Last Name"
+									required
+								/>
+							</div>
+
+							<div class="form-group">
+								<label htmlFor="email">Email Address:</label>
+								<input
+									type="email"
+									id="email"
+									name="email"
+									placeholder="Email"
+									required
+								/>
+							</div>
+
+							<div class="form-group">
+								<label htmlFor="confirmEmail">Confirm Email Address:</label>
+								<input
+									type="email"
+									id="confirmEmail"
+									name="confirmEmail"
+									placeholder="Confirm Email"
+									required
+								/>
+							</div>
+
+							<div class="form-group">
+								<label htmlFor="question">Your Question:</label>
+								<textarea
+									id="question"
+									name="question"
+									placeholder="Type your message here..."
+									required
+								></textarea>
+							</div>
+
+							<button class="moss-button" type="submit">Submit</button>
+						</form>
+					</div>
+				</div>
+			</main>
+
+			<footer>
+				<div class="footer-left">2024 New Jersey©</div>
+				<div class="footer-right">
+					<a href="#" id="backToTop">Back To Top &uarr;</a>
+				</div>
+			</footer>
+		</div>
+	</body>
+</html>
