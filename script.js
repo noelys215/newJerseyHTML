@@ -1,25 +1,20 @@
 /* Navigation Bar */
-document.addEventListener('DOMContentLoaded', function () {
+document.addEventListener('DOMContentLoaded', () => {
 	const hamburger = document.querySelector('.hamburger');
 	const mobileNav = document.querySelector('.mobile-nav');
 	const closeIcon = document.querySelector('.mobile-nav .close-icon');
 
-	function toggleMobileMenu() {
-		mobileNav.classList.toggle('open');
-	}
-
-	function closeMobileMenu() {
-		mobileNav.classList.remove('open');
-	}
+	const toggleMobileMenu = () => mobileNav.classList.toggle('open');
+	const closeMobileMenu = () => mobileNav.classList.remove('open');
 
 	hamburger.addEventListener('click', toggleMobileMenu);
 	closeIcon.addEventListener('click', closeMobileMenu);
 
-	document.querySelectorAll('.mobile-nav a').forEach(function (link) {
+	document.querySelectorAll('.mobile-nav a').forEach((link) => {
 		link.addEventListener('click', closeMobileMenu);
 	});
 
-	window.addEventListener('resize', function () {
+	window.addEventListener('resize', () => {
 		if (window.innerWidth >= 768 && mobileNav.classList.contains('open')) {
 			mobileNav.classList.remove('open');
 		}
@@ -27,9 +22,9 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 /* Form Functions */
-document.addEventListener('DOMContentLoaded', function () {
+document.addEventListener('DOMContentLoaded', () => {
 	const form = document.getElementById('contactForm');
-	form.onsubmit = function (e) {
+	form.onsubmit = (e) => {
 		e.preventDefault();
 
 		const formData = {
