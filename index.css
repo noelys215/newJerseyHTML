@@ -65,7 +65,6 @@ nav {
 }
 
 /* Header, Main, Footer */
-
 header {
 	background-color: #f9f6ee;
 	padding: 20px;
@@ -140,6 +139,7 @@ footer {
 .image-block img {
 	width: 300px;
 	height: 100%;
+	border-radius: 15px;
 }
 
 /* Button */
@@ -183,7 +183,7 @@ footer {
 	margin: 1rem;
 }
 
-/* Form 2 */
+/* Contact Form */
 
 .form-page {
 	display: flex;
@@ -422,12 +422,40 @@ button:hover {
 }
 
 .mobile-nav.open {
-	display: flex; /* Show when 'open' class is added */
+	/* Show when 'open' class is added */
+	display: flex;
+}
+
+/* 		Evaluator Feedback Additions  */
+.float-container {
+	max-width: 1100px;
+	margin: 0 auto;
+}
+
+.float-block {
+	display: inline-block;
+	width: 66%;
+	min-height: 300px;
+	padding: 0 1rem;
+	border: solid black;
+	border-radius: 15px;
+	background-color: #fdfcfc;
+}
+
+.weather-widget {
+	/* FLOAT TO RIGHT OR LEFT OF BLOCK */
+	float: right;
+	min-width: 300px;
+	border: solid black;
+	border-radius: 15px;
+	overflow: hidden;
+	margin-right: 1%;
 }
 
 /* Media Queries */
 @media (max-width: 768px) {
 	.section-block,
+	.float-block,
 	.aside-block {
 		width: 100%;
 	}
@@ -451,6 +479,14 @@ button:hover {
 
 	.hamburger {
 		display: block;
+	}
+
+	.float-block,
+	.weather-widget {
+		width: 100%;
+		float: none;
+		margin-bottom: 1rem;
+		padding: 0;
 	}
 }
 /* Hide Mobile Nav on Desktop */

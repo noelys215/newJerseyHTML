@@ -69,45 +69,48 @@
 					</button>
 				</div>
 
-				<!-- First Block -->
-				<div class="block-container">
-					<section class="section-block">
+				<!-- First Block * Updated for Eval -->
+				<div class="float-container">
+					<section class="float-block">
 						<h2>State Introduction</h2>
 						<p>
 							Welcome to the lush New Jerseys’ home site, your gateway to exploring
 							the Garden State's hidden wonders and bustling cities! Whether you're
 							planning a visit, seeking adventure, or just curious about what New
-							Jersey has to offer, you've come to the right place. Browse through our
-							site to discover each city's unique charm, from the historic streets of
-							Princeton to the lively boardwalks of Atlantic City. And if you have any
-							questions or need further information, don't hesitate to reach out using
-							our user-friendly contact form.
+							Jersey has to offer, you've come to the right place.
 						</p>
-						<a
-							class="block-link"
-							href="https://en.wikipedia.org/wiki/New_Jersey"
-							target="_blank"
-							rel="noreferrer"
-							>&ldquo;source&rdquo;</a
-						>
+						<p>
+							Browse through our site to discover each city's unique charm, from the
+							historic streets of Princeton to the lively boardwalks of Atlantic City.
+							And if you have any questions or need further information, don't
+							hesitate to reach out using our user-friendly contact form.
+						</p>
 					</section>
 
-					<aside class="aside-block">
-						<h2>News & Updates</h2>
-						<ul>
-							<li>Primary Elections dates</li>
-							<li>Mayor Jones resigns</li>
-							<li>Dairy Mills recall</li>
-							<li>Local cat saves firefighter</li>
-							<li>New State University unveiling</li>
-						</ul>
+					<!-- Weather Widget -->
+					<aside class="weather-widget">
 						<a
-							class="block-link"
-							href="https://www.nj.gov/"
-							target="_blank"
-							rel="noreferrer"
-							>&ldquo;source&rdquo;</a
+							class="weatherwidget-io"
+							href="https://forecast7.com/en/40d22n74d74/trenton/"
+							data-label_1="TRENTON"
+							data-label_2="WEATHER"
+							data-icons="Climacons Animated"
+							data-days="3"
+							data-theme="beige"
+							>TRENTON WEATHER</a
 						>
+						<script defer>
+							!(function (d, s, id) {
+								var js,
+									fjs = d.getElementsByTagName(s)[0];
+								if (!d.getElementById(id)) {
+									js = d.createElement(s);
+									js.id = id;
+									js.src = 'https://weatherwidget.io/js/widget.min.js';
+									fjs.parentNode.insertBefore(js, fjs);
+								}
+							})(document, 'script', 'weatherwidget-io-js');
+						</script>
 					</aside>
 				</div>
 
