@@ -185,7 +185,7 @@ footer {
 
 /* Contact Form */
 
-#form-page {
+.form-page {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
